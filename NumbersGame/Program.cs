@@ -34,7 +34,7 @@ namespace NumbersGame
 
                     }
                     numberOfGuesses++;              //Counter
-                    if (numberOfGuesses == 5)       //IF-statement to detect when user have guessed 5 times. Close program.
+                    if (numberOfGuesses == 5 && userGuess != correct)       //IF-statement to detect when user have guessed 5 times. Close program.
                     {
                         Console.WriteLine("Tyvärr du har gissat 5 gånger.");
                         correctGuess = true;
