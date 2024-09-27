@@ -13,9 +13,9 @@ namespace NumbersGame
 
             Console.WriteLine("Jag tänker på ett nummer mellan 1 och 20.\nKan du gissa vilket? Du får fem försök. "); //Greeting
 
-            while (!correctGuess && numberOfGuesses < 5) //While-loop user guess isnt correct or user have guessed 5 times
+            while (!correctGuess && numberOfGuesses < 5) //While-loop user guess isnt correct and user havent guessed 5 times
             {
-                while (!Int32.TryParse(Console.ReadLine(), out userGuess))
+                while (!Int32.TryParse(Console.ReadLine(), out userGuess)) //TryParse to catch wrong input
                 {
                     Console.WriteLine("Felaktig input, ange ett heltal:");
                 } 
